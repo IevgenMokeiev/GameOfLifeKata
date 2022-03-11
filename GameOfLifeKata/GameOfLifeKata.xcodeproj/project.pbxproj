@@ -8,12 +8,15 @@
 
 /* Begin PBXBuildFile section */
 		9F29E0FD27DB904C00992AC6 /* GameOfLifeKataApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F29E0FC27DB904C00992AC6 /* GameOfLifeKataApp.swift */; };
-		9F29E0FF27DB904C00992AC6 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F29E0FE27DB904C00992AC6 /* ContentView.swift */; };
+		9F29E0FF27DB904C00992AC6 /* GameOfLifeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F29E0FE27DB904C00992AC6 /* GameOfLifeView.swift */; };
 		9F29E10127DB904D00992AC6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9F29E10027DB904D00992AC6 /* Assets.xcassets */; };
 		9F29E10427DB904D00992AC6 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9F29E10327DB904D00992AC6 /* Preview Assets.xcassets */; };
 		9F29E10E27DB904D00992AC6 /* GameOfLifeKataTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F29E10D27DB904D00992AC6 /* GameOfLifeKataTests.swift */; };
 		9F29E11827DB904E00992AC6 /* GameOfLifeKataUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F29E11727DB904E00992AC6 /* GameOfLifeKataUITests.swift */; };
 		9F29E11A27DB904E00992AC6 /* GameOfLifeKataUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F29E11927DB904E00992AC6 /* GameOfLifeKataUITestsLaunchTests.swift */; };
+		9F29E23B27DB9C0900992AC6 /* Array2D.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F29E23A27DB9C0900992AC6 /* Array2D.swift */; };
+		9F29E35227DBA41500992AC6 /* GameOfLifeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F29E35127DBA41500992AC6 /* GameOfLifeViewModel.swift */; };
+		9F29E46627DBB16300992AC6 /* Array2D+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F29E46527DBB16300992AC6 /* Array2D+Extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +39,7 @@
 /* Begin PBXFileReference section */
 		9F29E0F927DB904C00992AC6 /* GameOfLifeKata.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GameOfLifeKata.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9F29E0FC27DB904C00992AC6 /* GameOfLifeKataApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameOfLifeKataApp.swift; sourceTree = "<group>"; };
-		9F29E0FE27DB904C00992AC6 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		9F29E0FE27DB904C00992AC6 /* GameOfLifeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameOfLifeView.swift; sourceTree = "<group>"; };
 		9F29E10027DB904D00992AC6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9F29E10327DB904D00992AC6 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		9F29E10927DB904D00992AC6 /* GameOfLifeKataTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GameOfLifeKataTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -44,6 +47,9 @@
 		9F29E11327DB904E00992AC6 /* GameOfLifeKataUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GameOfLifeKataUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9F29E11727DB904E00992AC6 /* GameOfLifeKataUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameOfLifeKataUITests.swift; sourceTree = "<group>"; };
 		9F29E11927DB904E00992AC6 /* GameOfLifeKataUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameOfLifeKataUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		9F29E23A27DB9C0900992AC6 /* Array2D.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Array2D.swift; sourceTree = "<group>"; };
+		9F29E35127DBA41500992AC6 /* GameOfLifeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameOfLifeViewModel.swift; sourceTree = "<group>"; };
+		9F29E46527DBB16300992AC6 /* Array2D+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Array2D+Extensions.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,7 +101,9 @@
 			isa = PBXGroup;
 			children = (
 				9F29E0FC27DB904C00992AC6 /* GameOfLifeKataApp.swift */,
-				9F29E0FE27DB904C00992AC6 /* ContentView.swift */,
+				9F29E34E27DBA3AF00992AC6 /* View */,
+				9F29E34F27DBA3B700992AC6 /* ViewModel */,
+				9F29E35027DBA3C200992AC6 /* Utilities */,
 				9F29E10027DB904D00992AC6 /* Assets.xcassets */,
 				9F29E10227DB904D00992AC6 /* Preview Content */,
 			);
@@ -125,6 +133,31 @@
 				9F29E11927DB904E00992AC6 /* GameOfLifeKataUITestsLaunchTests.swift */,
 			);
 			path = GameOfLifeKataUITests;
+			sourceTree = "<group>";
+		};
+		9F29E34E27DBA3AF00992AC6 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				9F29E0FE27DB904C00992AC6 /* GameOfLifeView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		9F29E34F27DBA3B700992AC6 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				9F29E35127DBA41500992AC6 /* GameOfLifeViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		9F29E35027DBA3C200992AC6 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				9F29E23A27DB9C0900992AC6 /* Array2D.swift */,
+				9F29E46527DBB16300992AC6 /* Array2D+Extensions.swift */,
+			);
+			path = Utilities;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -257,8 +290,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9F29E0FF27DB904C00992AC6 /* ContentView.swift in Sources */,
+				9F29E35227DBA41500992AC6 /* GameOfLifeViewModel.swift in Sources */,
+				9F29E23B27DB9C0900992AC6 /* Array2D.swift in Sources */,
+				9F29E0FF27DB904C00992AC6 /* GameOfLifeView.swift in Sources */,
 				9F29E0FD27DB904C00992AC6 /* GameOfLifeKataApp.swift in Sources */,
+				9F29E46627DBB16300992AC6 /* Array2D+Extensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -427,7 +463,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -457,7 +493,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
