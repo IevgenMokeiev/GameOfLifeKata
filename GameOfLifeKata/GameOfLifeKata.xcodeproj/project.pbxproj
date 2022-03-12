@@ -17,6 +17,7 @@
 		9F29E23B27DB9C0900992AC6 /* Array2D.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F29E23A27DB9C0900992AC6 /* Array2D.swift */; };
 		9F29E35227DBA41500992AC6 /* GameOfLifeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F29E35127DBA41500992AC6 /* GameOfLifeViewModel.swift */; };
 		9F29E46627DBB16300992AC6 /* Array2D+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F29E46527DBB16300992AC6 /* Array2D+Extensions.swift */; };
+		9FCA358F27DCDCF90019D232 /* Color+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FCA358E27DCDCF90019D232 /* Color+Extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,6 +51,7 @@
 		9F29E23A27DB9C0900992AC6 /* Array2D.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Array2D.swift; sourceTree = "<group>"; };
 		9F29E35127DBA41500992AC6 /* GameOfLifeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameOfLifeViewModel.swift; sourceTree = "<group>"; };
 		9F29E46527DBB16300992AC6 /* Array2D+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Array2D+Extensions.swift"; sourceTree = "<group>"; };
+		9FCA358E27DCDCF90019D232 /* Color+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+Extensions.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -156,6 +158,7 @@
 			children = (
 				9F29E23A27DB9C0900992AC6 /* Array2D.swift */,
 				9F29E46527DBB16300992AC6 /* Array2D+Extensions.swift */,
+				9FCA358E27DCDCF90019D232 /* Color+Extensions.swift */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";
@@ -295,6 +298,7 @@
 				9F29E0FF27DB904C00992AC6 /* GameOfLifeView.swift in Sources */,
 				9F29E0FD27DB904C00992AC6 /* GameOfLifeKataApp.swift in Sources */,
 				9F29E46627DBB16300992AC6 /* Array2D+Extensions.swift in Sources */,
+				9FCA358F27DCDCF90019D232 /* Color+Extensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

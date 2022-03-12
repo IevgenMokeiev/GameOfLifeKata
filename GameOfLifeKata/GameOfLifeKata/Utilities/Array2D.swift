@@ -5,8 +5,6 @@
 //  Created by Yevhen Mokeiev on 11.03.2022.
 //
 
-import Foundation
-
 struct Array2D {
   let columns: Int
   let rows: Int

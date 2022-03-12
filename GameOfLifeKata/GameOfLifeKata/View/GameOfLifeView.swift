@@ -9,8 +9,8 @@ import SwiftUI
 
 struct GameOfLifeView: View {
 
-  @State private var columns = 0
-  @State private var rows = 0
+  @State private var columns: Int?
+  @State private var rows: Int?
   @State var isDisplayingGame = false
   @ObservedObject var viewModel: GameOfLifeViewModel
 
@@ -21,60 +21,102 @@ struct GameOfLifeView: View {
   }
 
   var body: some View {
-    HStack {
-      Text("Enter number of columns:")
-      TextField(
-        "Enter number",
-        value: $columns,
-        format: .number
-      )
-    }.padding()
-    HStack {
-      Text("Enter number of rows:")
-      TextField(
-        "Enter number",
-        value: $rows,
-        format: .number
-      )
-    }.padding()
-    Button("Initialize Game of Life!") {
-      isDisplayingGame = true
-      initializeMatrix()
-    }.padding()
-    if isDisplayingGame {
-      drawGameOfLife()
+    VStack {
+      Text("Convay's Game of Life")
+        .foregroundColor(.white)
+        .font(.system(size: 25))
+        .padding()
+      HStack {
+        Text("Enter number of columns")
+          .frame(maxHeight: .infinity)
+          .padding()
+          .foregroundColor(.white)
+          .background(Color.greenColor)
+        TextField(
+          "Enter number",
+          value: $columns,
+          format: .number
+        )
+          .frame(maxHeight: .infinity)
+          .padding()
+          .foregroundColor(.white)
+          .background(Color.yellowColor)
+      }
+      .fixedSize(horizontal: false, vertical: true)
+      .padding()
+      HStack {
+        Text("Enter number of rows")
+          .frame(maxHeight: .infinity)
+          .padding()
+          .foregroundColor(.white)
+          .background(Color.greenColor)
+        TextField(
+          "Enter number",
+          value: $rows,
+          format: .number
+        )
+          .frame(maxHeight: .infinity)
+          .padding()
+          .foregroundColor(.white)
+          .background(Color.yellowColor)
+      }
+      .fixedSize(horizontal: false, vertical: true)
+      .padding()
+      Button("Initialize Game of Life!") {
+        if rows != nil, columns != nil {
+          isDisplayingGame = true
+          initializeMatrix()
+        }
+      }
+      .padding()
+      .foregroundColor(.white)
+      .background(Color.blueColor)
+      if isDisplayingGame {
+        drawGameOfLife()
+      }
+      Spacer()
     }
+    .frame(maxWidth: .infinity, maxHeight: .infinity)
+    .background(Color(uiColor: .lightGray))
   }
 
   @ViewBuilder func drawGameOfLife() -> some View {
-    VStack {
-      ForEach(0..<rows) { row in
-        HStack {
-          ForEach(0..<columns) { column in
+    VStack(spacing: 0) {
+      ForEach(0..<(rows ?? 0)) { row in
+        HStack(spacing: 0) {
+          ForEach(0..<(columns ?? 0)) { column in
             let isAlive = viewModel.matrix?.isAlive(
               column: column,
               row: row
             ) ?? false
-            Button(isAlive ? "*" : "-") {
+            Button {
               viewModel.matrix = viewModel.matrix?.setAlive(
                 isAlive: !isAlive,
                 column: column,
                 row: row
               )
-            }.font(.system(size: 40))
+            } label: {
+              Image(systemName: isAlive ? "square.fill" : "square")
+                .resizable()
+                .frame(width: 40, height: 40)
+            }
           }
         }
       }
-    }.padding()
+    }
+    .padding()
     Button("Show Next Generation") {
       viewModel.transitionToNextGeneration()
     }
+    .padding()
+    .foregroundColor(.white)
+    .background(Color.blueColor)
   }
 
   func initializeMatrix() {
     viewModel.setupMatrix(
-      columns: columns,
-      rows: rows
+      columns: columns ?? 0,
+      rows: rows ?? 0
     )
   }
 }

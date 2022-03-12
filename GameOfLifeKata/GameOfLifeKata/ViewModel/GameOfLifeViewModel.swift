@@ -5,7 +5,6 @@
 //  Created by Yevhen Mokeiev on 11.03.2022.
 //
 
-import Foundation
 import SwiftUI
 
 final class GameOfLifeViewModel: ObservableObject {
@@ -17,9 +16,10 @@ final class GameOfLifeViewModel: ObservableObject {
   }
 
   func transitionToNextGeneration() {
-    guard var nextGenMatrix = matrix, let currentMatrix = matrix else {
+    guard let currentMatrix = matrix else {
       return
     }
+    var nextGenMatrix = currentMatrix
     // 1. Any live cell with fewer than two live neighbours dies, as if caused by underpopulation.
     // 2. Any live cell with more than three live neighbours dies, as if by overcrowding.
     // 3. Any dead cell with exactly three live neighbours becomes a live cell.
@@ -35,7 +35,6 @@ final class GameOfLifeViewModel: ObservableObject {
         }
       }
     }
-
     matrix = nextGenMatrix
   }
 }
