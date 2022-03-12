@@ -5,7 +5,7 @@
 //  Created by Yevhen Mokeiev on 11.03.2022.
 //
 
-struct Array2D {
+struct Array2D: Equatable {
   let columns: Int
   let rows: Int
   private var matrix: [Int]

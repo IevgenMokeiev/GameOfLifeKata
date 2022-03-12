@@ -11,9 +11,7 @@
 		9F29E0FF27DB904C00992AC6 /* GameOfLifeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F29E0FE27DB904C00992AC6 /* GameOfLifeView.swift */; };
 		9F29E10127DB904D00992AC6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9F29E10027DB904D00992AC6 /* Assets.xcassets */; };
 		9F29E10427DB904D00992AC6 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9F29E10327DB904D00992AC6 /* Preview Assets.xcassets */; };
-		9F29E10E27DB904D00992AC6 /* GameOfLifeKataTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F29E10D27DB904D00992AC6 /* GameOfLifeKataTests.swift */; };
-		9F29E11827DB904E00992AC6 /* GameOfLifeKataUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F29E11727DB904E00992AC6 /* GameOfLifeKataUITests.swift */; };
-		9F29E11A27DB904E00992AC6 /* GameOfLifeKataUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F29E11927DB904E00992AC6 /* GameOfLifeKataUITestsLaunchTests.swift */; };
+		9F29E10E27DB904D00992AC6 /* Array2DTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F29E10D27DB904D00992AC6 /* Array2DTests.swift */; };
 		9F29E23B27DB9C0900992AC6 /* Array2D.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F29E23A27DB9C0900992AC6 /* Array2D.swift */; };
 		9F29E35227DBA41500992AC6 /* GameOfLifeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F29E35127DBA41500992AC6 /* GameOfLifeViewModel.swift */; };
 		9F29E46627DBB16300992AC6 /* Array2D+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F29E46527DBB16300992AC6 /* Array2D+Extensions.swift */; };
@@ -22,13 +20,6 @@
 
 /* Begin PBXContainerItemProxy section */
 		9F29E10A27DB904D00992AC6 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 9F29E0F127DB904C00992AC6 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 9F29E0F827DB904C00992AC6;
-			remoteInfo = GameOfLifeKata;
-		};
-		9F29E11427DB904E00992AC6 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 9F29E0F127DB904C00992AC6 /* Project object */;
 			proxyType = 1;
@@ -44,10 +35,7 @@
 		9F29E10027DB904D00992AC6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9F29E10327DB904D00992AC6 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		9F29E10927DB904D00992AC6 /* GameOfLifeKataTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GameOfLifeKataTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		9F29E10D27DB904D00992AC6 /* GameOfLifeKataTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameOfLifeKataTests.swift; sourceTree = "<group>"; };
-		9F29E11327DB904E00992AC6 /* GameOfLifeKataUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GameOfLifeKataUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		9F29E11727DB904E00992AC6 /* GameOfLifeKataUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameOfLifeKataUITests.swift; sourceTree = "<group>"; };
-		9F29E11927DB904E00992AC6 /* GameOfLifeKataUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameOfLifeKataUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		9F29E10D27DB904D00992AC6 /* Array2DTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Array2DTests.swift; sourceTree = "<group>"; };
 		9F29E23A27DB9C0900992AC6 /* Array2D.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Array2D.swift; sourceTree = "<group>"; };
 		9F29E35127DBA41500992AC6 /* GameOfLifeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameOfLifeViewModel.swift; sourceTree = "<group>"; };
 		9F29E46527DBB16300992AC6 /* Array2D+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Array2D+Extensions.swift"; sourceTree = "<group>"; };
@@ -69,13 +57,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		9F29E11027DB904E00992AC6 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -84,7 +65,6 @@
 			children = (
 				9F29E0FB27DB904C00992AC6 /* GameOfLifeKata */,
 				9F29E10C27DB904D00992AC6 /* GameOfLifeKataTests */,
-				9F29E11627DB904E00992AC6 /* GameOfLifeKataUITests */,
 				9F29E0FA27DB904C00992AC6 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -94,7 +74,6 @@
 			children = (
 				9F29E0F927DB904C00992AC6 /* GameOfLifeKata.app */,
 				9F29E10927DB904D00992AC6 /* GameOfLifeKataTests.xctest */,
-				9F29E11327DB904E00992AC6 /* GameOfLifeKataUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -123,18 +102,9 @@
 		9F29E10C27DB904D00992AC6 /* GameOfLifeKataTests */ = {
 			isa = PBXGroup;
 			children = (
-				9F29E10D27DB904D00992AC6 /* GameOfLifeKataTests.swift */,
+				9F29E10D27DB904D00992AC6 /* Array2DTests.swift */,
 			);
 			path = GameOfLifeKataTests;
-			sourceTree = "<group>";
-		};
-		9F29E11627DB904E00992AC6 /* GameOfLifeKataUITests */ = {
-			isa = PBXGroup;
-			children = (
-				9F29E11727DB904E00992AC6 /* GameOfLifeKataUITests.swift */,
-				9F29E11927DB904E00992AC6 /* GameOfLifeKataUITestsLaunchTests.swift */,
-			);
-			path = GameOfLifeKataUITests;
 			sourceTree = "<group>";
 		};
 		9F29E34E27DBA3AF00992AC6 /* View */ = {
@@ -201,24 +171,6 @@
 			productReference = 9F29E10927DB904D00992AC6 /* GameOfLifeKataTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		9F29E11227DB904E00992AC6 /* GameOfLifeKataUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 9F29E12327DB904E00992AC6 /* Build configuration list for PBXNativeTarget "GameOfLifeKataUITests" */;
-			buildPhases = (
-				9F29E10F27DB904E00992AC6 /* Sources */,
-				9F29E11027DB904E00992AC6 /* Frameworks */,
-				9F29E11127DB904E00992AC6 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				9F29E11527DB904E00992AC6 /* PBXTargetDependency */,
-			);
-			name = GameOfLifeKataUITests;
-			productName = GameOfLifeKataUITests;
-			productReference = 9F29E11327DB904E00992AC6 /* GameOfLifeKataUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -233,10 +185,6 @@
 						CreatedOnToolsVersion = 13.0;
 					};
 					9F29E10827DB904D00992AC6 = {
-						CreatedOnToolsVersion = 13.0;
-						TestTargetID = 9F29E0F827DB904C00992AC6;
-					};
-					9F29E11227DB904E00992AC6 = {
 						CreatedOnToolsVersion = 13.0;
 						TestTargetID = 9F29E0F827DB904C00992AC6;
 					};
@@ -257,7 +205,6 @@
 			targets = (
 				9F29E0F827DB904C00992AC6 /* GameOfLifeKata */,
 				9F29E10827DB904D00992AC6 /* GameOfLifeKataTests */,
-				9F29E11227DB904E00992AC6 /* GameOfLifeKataUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -273,13 +220,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		9F29E10727DB904D00992AC6 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		9F29E11127DB904E00992AC6 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -306,16 +246,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9F29E10E27DB904D00992AC6 /* GameOfLifeKataTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		9F29E10F27DB904E00992AC6 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				9F29E11A27DB904E00992AC6 /* GameOfLifeKataUITestsLaunchTests.swift in Sources */,
-				9F29E11827DB904E00992AC6 /* GameOfLifeKataUITests.swift in Sources */,
+				9F29E10E27DB904D00992AC6 /* Array2DTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -326,11 +257,6 @@
 			isa = PBXTargetDependency;
 			target = 9F29E0F827DB904C00992AC6 /* GameOfLifeKata */;
 			targetProxy = 9F29E10A27DB904D00992AC6 /* PBXContainerItemProxy */;
-		};
-		9F29E11527DB904E00992AC6 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 9F29E0F827DB904C00992AC6 /* GameOfLifeKata */;
-			targetProxy = 9F29E11427DB904E00992AC6 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -520,7 +446,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 7FA4YF49TS;
 				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -545,7 +471,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 7FA4YF49TS;
 				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -558,52 +484,6 @@
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GameOfLifeKata.app/GameOfLifeKata";
-			};
-			name = Release;
-		};
-		9F29E12427DB904E00992AC6 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 7FA4YF49TS;
-				GENERATE_INFOPLIST_FILE = YES;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.eugene.GameOfLifeKataUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = GameOfLifeKata;
-			};
-			name = Debug;
-		};
-		9F29E12527DB904E00992AC6 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 7FA4YF49TS;
-				GENERATE_INFOPLIST_FILE = YES;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.eugene.GameOfLifeKataUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = GameOfLifeKata;
 			};
 			name = Release;
 		};
@@ -633,15 +513,6 @@
 			buildConfigurations = (
 				9F29E12127DB904E00992AC6 /* Debug */,
 				9F29E12227DB904E00992AC6 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		9F29E12327DB904E00992AC6 /* Build configuration list for PBXNativeTarget "GameOfLifeKataUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				9F29E12427DB904E00992AC6 /* Debug */,
-				9F29E12527DB904E00992AC6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

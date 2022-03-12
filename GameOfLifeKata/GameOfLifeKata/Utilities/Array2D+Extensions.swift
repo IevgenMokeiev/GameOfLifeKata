@@ -74,4 +74,25 @@ extension Array2D {
 
     return number
   }
+
+  var nextGeneration: Array2D {
+    var nextGenMatrix = self
+    // 1. Any live cell with fewer than two live neighbours dies, as if caused by underpopulation.
+    // 2. Any live cell with more than three live neighbours dies, as if by overcrowding.
+    // 3. Any dead cell with exactly three live neighbours becomes a live cell.
+    for row in 0..<rows {
+      for column in 0..<columns {
+        if isAlive(column: column, row: row) {
+          if numberOfLiveNeighbours(column: column, row: row) < 2 ||
+              numberOfLiveNeighbours(column: column, row: row) > 3 {
+            nextGenMatrix = nextGenMatrix.setAlive(isAlive: false, column: column, row: row)
+          }
+        } else if numberOfLiveNeighbours(column: column, row: row) == 3 {
+          nextGenMatrix = nextGenMatrix.setAlive(isAlive: true, column: column, row: row)
+        }
+      }
+    }
+
+    return nextGenMatrix
+  }
 }
