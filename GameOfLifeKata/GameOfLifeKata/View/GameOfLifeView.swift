@@ -23,14 +23,12 @@ struct GameOfLifeView: View {
   var body: some View {
     VStack {
       Text("Convay's Game of Life")
-        .foregroundColor(.white)
         .font(.system(size: 25))
         .padding()
       HStack {
         Text("Enter number of columns")
           .frame(maxHeight: .infinity)
           .padding()
-          .foregroundColor(.white)
           .background(Color.greenColor)
         TextField(
           "Enter number",
@@ -39,7 +37,6 @@ struct GameOfLifeView: View {
         )
           .frame(maxHeight: .infinity)
           .padding()
-          .foregroundColor(.white)
           .background(Color.yellowColor)
       }
       .fixedSize(horizontal: false, vertical: true)
@@ -48,7 +45,6 @@ struct GameOfLifeView: View {
         Text("Enter number of rows")
           .frame(maxHeight: .infinity)
           .padding()
-          .foregroundColor(.white)
           .background(Color.greenColor)
         TextField(
           "Enter number",
@@ -57,7 +53,6 @@ struct GameOfLifeView: View {
         )
           .frame(maxHeight: .infinity)
           .padding()
-          .foregroundColor(.white)
           .background(Color.yellowColor)
       }
       .fixedSize(horizontal: false, vertical: true)
@@ -69,7 +64,6 @@ struct GameOfLifeView: View {
         }
       }
       .padding()
-      .foregroundColor(.white)
       .background(Color.blueColor)
       if isDisplayingGame {
         drawGameOfLife()
@@ -77,6 +71,7 @@ struct GameOfLifeView: View {
       Spacer()
     }
     .frame(maxWidth: .infinity, maxHeight: .infinity)
+    .foregroundColor(.white)
     .background(Color(uiColor: .lightGray))
   }
 
@@ -98,6 +93,7 @@ struct GameOfLifeView: View {
             } label: {
               Image(systemName: isAlive ? "square.fill" : "square")
                 .resizable()
+                .foregroundColor(.black)
                 .frame(width: 40, height: 40)
             }
           }
@@ -109,7 +105,6 @@ struct GameOfLifeView: View {
       viewModel.transitionToNextGeneration()
     }
     .padding()
-    .foregroundColor(.white)
     .background(Color.blueColor)
   }
 
