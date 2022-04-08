@@ -58,15 +58,17 @@ struct GameOfLifeView: View {
       .fixedSize(horizontal: false, vertical: true)
       .padding()
       Button("Initialize Game of Life!") {
-        if rows != nil, columns != nil {
+        if let rows = rows, let columns = columns {
           isDisplayingGame = true
-          initializeMatrix()
+          initializeMatrix(rows: rows, columns: columns)
         }
       }
       .padding()
       .background(Color.blueColor)
-      if isDisplayingGame {
-        drawGameOfLife()
+      if isDisplayingGame,
+          let rows = self.rows,
+          let columns = self.columns {
+        drawGameOfLife(rows: rows, columns: columns)
       }
       Spacer()
     }
@@ -75,11 +77,14 @@ struct GameOfLifeView: View {
     .background(Color(uiColor: .lightGray))
   }
 
-  @ViewBuilder func drawGameOfLife() -> some View {
+  @ViewBuilder func drawGameOfLife(
+    rows: Int,
+    columns: Int
+  ) -> some View {
     VStack(spacing: 0) {
-      ForEach(0..<(rows ?? 0)) { row in
+      ForEach(0..<rows, id: \.self) { row in
         HStack(spacing: 0) {
-          ForEach(0..<(columns ?? 0)) { column in
+          ForEach(0..<columns, id: \.self) { column in
             let isAlive = viewModel.matrix?.isAlive(
               column: column,
               row: row
@@ -108,10 +113,10 @@ struct GameOfLifeView: View {
     .background(Color.blueColor)
   }
 
-  func initializeMatrix() {
+  func initializeMatrix(rows: Int, columns: Int) {
     viewModel.setupMatrix(
-      columns: columns ?? 0,
-      rows: rows ?? 0
+      columns: columns,
+      rows: rows
     )
   }
 }
